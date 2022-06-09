@@ -6,11 +6,11 @@ self.addEventListener('install', (e) => {
   
       caches.open(CACHE).then((cache) => cache.addAll([
   
-          "/M4103C---Projet-HotHotHot/index.html",  
-          "/M4103C---Projet-HotHotHot/js/script.js",
-          "/M4103C---Projet-HotHotHot/images/thermometer.png",
-          "/M4103C---Projet-HotHotHot/service-worker.js",
-          "/M4103C---Projet-HotHotHot/css/style.css"
+          "/Hot-Hot-Hot-Project/index.html",  
+          "/Hot-Hot-Hot-Project/js/script.js",
+          "/Hot-Hot-Hot-Project/images/thermometer.png",
+          "/Hot-Hot-Hot-Project/service-worker.js",
+          "/Hot-Hot-Hot-Project/css/style.css"
 
       ])),
   

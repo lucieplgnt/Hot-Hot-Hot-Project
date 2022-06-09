@@ -1,0 +1,15 @@
+{
+    "name": "KOTE Temperature",
+    "short_name": "KOTE",
+    "description": "Affichage graphique des températures récupérées par des capteurs",
+    "start_url": "/Hot-Hot-Hot-Project/index.html",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "images/thermometer.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "background_color": "grey"
+}
