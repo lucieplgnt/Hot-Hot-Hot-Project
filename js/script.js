@@ -88,15 +88,15 @@ onglets.forEach(onglet => {
 
 if ('serviceWorker' in navigator) {
 
-  navigator.serviceWorker.register('/M4103C---Projet-HotHotHot/service-worker.js') // à adapter à l'URL du projet
+  navigator.serviceWorker.register('/Hot-Hot-Hot-Project/service-worker.js') // à adapter à l'URL du projet
 
   .then(() => { console.log('Service Worker Registered'); });
 
 }
 
 // Create WebSocket connection.
-/* var socket = new WebSocket('wss://ws.hothothot.dog:9502'); */
-var socket = new WebSocket('ws://localhost:8100'); 
+var socket = new WebSocket('wss://ws.hothothot.dog:9502'); 
+/* var socket = new WebSocket('ws://localhost:8100'); */
 
 IndiceTemp = 0;
 socket.onopen = () => {
