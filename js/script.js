@@ -1,5 +1,4 @@
 
-
 // systhème d'onglets - début
 const onglets = Array.from(document.querySelectorAll(".onglets"));
 const contenu = Array.from(document.querySelectorAll(".contenu"));
