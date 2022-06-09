@@ -95,8 +95,8 @@ if ('serviceWorker' in navigator) {
 }
 
 // Create WebSocket connection.
-var socket = new WebSocket('wss://ws.hothothot.dog:9502'); 
-/* var socket = new WebSocket('ws://localhost:8100'); */
+/* var socket = new WebSocket('wss://ws.hothothot.dog:9502'); */
+var socket = new WebSocket('ws://localhost:8100'); 
 
 IndiceTemp = 0;
 socket.onopen = () => {
