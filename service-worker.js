@@ -10,7 +10,8 @@ self.addEventListener('install', (e) => {
           "/Hot-Hot-Hot-Project/js/script.js",
           "/Hot-Hot-Hot-Project/images/thermometer.png",
           "/Hot-Hot-Hot-Project/service-worker.js",
-          "/Hot-Hot-Hot-Project/css/style.css"
+          "/Hot-Hot-Hot-Project/css/style.css",
+          "/Hot-Hot-Hot-Project/manifest.webmanifest"
 
       ])),
   
