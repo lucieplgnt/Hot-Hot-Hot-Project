@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/thermometer.png">
+
+    <title>Hot-Hot-Hot</title>
+</head>
+<body class="dark">
+    <div class="menu">
+        <div class="close-menu">
+            <div class="menu-content">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="main-menu">
+                <a href="#sec1" class="menu1"><span>Accueil</span></a>
+                <a href="#sec2" class="menu2"><span>Documentation</span></a>
+            </div>
+            <div class="theme-content">
+                <i class='bx bx-sun'></i>
+            </div>
+        </div>
+        <div class="open-menu">
+            <div class="menu-content2">
+                <div class="connect">
+                    <i class="bx bx-user"></i>
+                    <span class="tooltip1">connexion</span>
+                    <!-- <p class="p1">connexion</p> -->
+                </div>
+                <div class="disconnect">
+                    <i class="bx bx-wifi-off"></i>
+                    <span class="tooltip">hors ligne</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div> <!-- remonter -->
+        <a href="#sec1" class="remonter"><i class='bx bxs-chevrons-up'></i></a>
+    </div>
+    
+    <div class="dl-button"> <!-- bouton de téléchargement -->
+        <i class='bx bxs-download'></i>
+    </div>
+
+    <section class="sec1" id="sec1">
+        <div class="container">
+            <div class="container-onglets">
+                <div class="onglets active" id="onglet-active" data-block="1">Données Temps réel</div>
+                <div class="onglets" id="onglet" data-block="2">Données Graphe</div>
+            </div>
+
+            <div class="contenu activeContenu" data-block="1" id="clc">
+                <div class="titre-donnees">
+                    <h3 class="titre-temp">Voici les températures exterieure et intérieure actuelles</h3>
+                    <hr>
+                </div>
+                <div class="p-temp-ext">
+                    <p class="temperature">Connexion au serveur en cours</p>
+                    <p class="la-temp">Chargement ...</p>
+                </div>
+                <div class="p-temp-int">
+                    <p class="temperature2">Connexion au serveur en cours</p>
+                    <p class="la-temp2">Chargement ...</p>
+                </div>
+            </div>
+        
+            <div class="contenu" data-block="2" id="clc-2">
+                <div class="curve_chart"></div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script defer src="js/script.js"></script>
+
+
+</body>
+</html>
