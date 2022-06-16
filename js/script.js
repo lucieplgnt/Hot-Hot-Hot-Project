@@ -114,8 +114,8 @@ function drawChart() {
       heureNminute = heure + "h : " + minute + "m";
       tempextGraph = JSON.parse(tempext);
       tempintGraph = JSON.parse(tempint);
-	  tempext = tempext.replace('.', ',')
-		tempint = tempint.replace('.', ',')
+	  /*tempext = tempext.replace('.', ',')
+		tempint = tempint.replace('.', ',')*/
       tabTemp.push(heureNminute);
       tabTemp.push(parseFloat(tempext)); /* tempextGraph */
       tabTemp.push(parseFloat(tempint));
@@ -187,8 +187,8 @@ function drawChart() {
           heureNminute = heure + " : " + minute;
           tempextGraph = JSON.parse(tempext);
           tempintGraph = JSON.parse(tempint);
-		  tempext = tempext.replace('.', ',')
-		  tempint = tempint.replace('.', ',')
+		  /*tempext = tempext.replace('.', ',')
+		  tempint = tempint.replace('.', ',')*/
           tabTemp.push(heureNminute);
           tabTemp.push(parseFloat(tempext)); /* tempextGraph */
           tabTemp.push(parseFloat(tempint));
