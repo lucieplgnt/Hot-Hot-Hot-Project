@@ -58,7 +58,8 @@ google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback(drawChart);
 function drawChart() {
   var options = {
-    title: 'Evolution température dans le temps'
+    title: 'Evolution température dans le temps',
+	backgroundColor: { fill:'transparent' }
   };
   var data = new google.visualization.DataTable();
 
@@ -114,8 +115,6 @@ function drawChart() {
       heureNminute = heure + "h : " + minute + "m";
       tempextGraph = JSON.parse(tempext);
       tempintGraph = JSON.parse(tempint);
-	  /*tempext = tempext.replace('.', ',')
-		tempint = tempint.replace('.', ',')*/
       tabTemp.push(heureNminute);
       tabTemp.push(parseFloat(tempext)); /* tempextGraph */
       tabTemp.push(parseFloat(tempint));
@@ -187,8 +186,6 @@ function drawChart() {
           heureNminute = heure + " : " + minute;
           tempextGraph = JSON.parse(tempext);
           tempintGraph = JSON.parse(tempint);
-		  /*tempext = tempext.replace('.', ',')
-		  tempint = tempint.replace('.', ',')*/
           tabTemp.push(heureNminute);
           tabTemp.push(parseFloat(tempext)); /* tempextGraph */
           tabTemp.push(parseFloat(tempint));
