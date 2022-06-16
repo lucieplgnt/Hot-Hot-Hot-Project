@@ -115,8 +115,8 @@ function drawChart() {
       tempextGraph = JSON.parse(tempext);
       tempintGraph = JSON.parse(tempint);
       tabTemp.push(heureNminute);
-      tabTemp.push(tempext); /* tempextGraph */
-      tabTemp.push(tempint);
+      tabTemp.push(parseInt(tempext)); /* tempextGraph */
+      tabTemp.push(parseInt(tempint));
       console.log(tabTemp);
       data.addRows([[tabTemp[0], tabTemp[1], tabTemp[2]]]);
       if (numberOfData >= 40)
