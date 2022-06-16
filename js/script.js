@@ -117,8 +117,8 @@ function drawChart() {
 	  tempext = tempext.replace('.', ',')
 		tempint = tempint.replace('.', ',')
       tabTemp.push(heureNminute);
-      tabTemp.push(parseInt(tempext)); /* tempextGraph */
-      tabTemp.push(parseInt(tempint));
+      tabTemp.push(parseFloat(tempext)); /* tempextGraph */
+      tabTemp.push(parseFloat(tempint));
       console.log(tabTemp);
       data.addRows([[tabTemp[0], tabTemp[1], tabTemp[2]]]);
       if (numberOfData >= 40)
@@ -190,8 +190,8 @@ function drawChart() {
 		  tempext = tempext.replace('.', ',')
 		  tempint = tempint.replace('.', ',')
           tabTemp.push(heureNminute);
-          tabTemp.push(parseInt(tempext)); /* tempextGraph */
-          tabTemp.push(parseInt(tempint));
+          tabTemp.push(parseFloat(tempext)); /* tempextGraph */
+          tabTemp.push(parseFloat(tempint));
           console.log(tabTemp);
           data.addRows([[tabTemp[0], tabTemp[1], tabTemp[2]]]);
           if (numberOfData >= 40)
