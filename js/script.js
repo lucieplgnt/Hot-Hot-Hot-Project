@@ -40,7 +40,7 @@ if ('serviceWorker' in navigator) {
 
   navigator.serviceWorker.register('/Hot-Hot-Hot-Project/service-worker.js') // à adapter à l'URL du projet
 
-  .then(() => { console.log('Service Worker Registered'); });
+  .then(() => { /*console.log('Service Worker Registered');*/ });
 
 }
 
@@ -71,8 +71,8 @@ function drawChart() {
 
   numberOfData = 0;
   socket.onmessage = (msg) => {
-    console.log("Received: "+msg.data.length);
-    /* ajouter recup temp */
+    //console.log("Received: "+msg.data.length);
+    /*recup temp */
     if(msg.data.length > 0)
     { 
       let capteurs = JSON.parse(msg.data);
@@ -167,14 +167,14 @@ function drawChart() {
           }
 
           let tmp = document.querySelector(".temperature");
-          tmp.textContent = latempExt;
+          tmp.textContent = parseInt(latempExt);
           let valeurTemperature = document.querySelector(".la-temp");
-          valeurTemperature.textContent = valTemp;
+          valeurTemperature.textContent = parseInt(valTemp);
 
           let tmp2 = document.querySelector(".temperature2");
-          tmp2.textContent= latempInt;
+          tmp2.textContent= parseInt(latempInt);
           let valeurTemperature2 = document.querySelector(".la-temp2");
-          valeurTemperature2.textContent = valTemp2;
+          valeurTemperature2.textContent = parseInt(valTemp2);
 
           var tabTemp = [];
           var tmpsAct = new Date();
@@ -182,12 +182,12 @@ function drawChart() {
           minute = tmpsAct.getMinutes();
           heure = heure < 10 ? "0" + heure : heure;
           minute = minute < 10 ? "0" + minute : minute;
-          heureNminute = heure + "h : " + minute + "m";
+          heureNminute = heure + " : " + minute;
           tempextGraph = JSON.parse(tempext);
           tempintGraph = JSON.parse(tempint);
           tabTemp.push(heureNminute);
-          tabTemp.push(tempext); /* tempextGraph */
-          tabTemp.push(tempint);
+          tabTemp.push(parseInt(tempext)); /* tempextGraph */
+          tabTemp.push(parseInt(tempint));
           console.log(tabTemp);
           data.addRows([[tabTemp[0], tabTemp[1], tabTemp[2]]]);
           if (numberOfData >= 40)
