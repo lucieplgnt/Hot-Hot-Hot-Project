@@ -112,7 +112,7 @@ function drawChart() {
       minute = tmpsAct.getMinutes();
       heure = heure < 10 ? "0" + heure : heure;
       minute = minute < 10 ? "0" + minute : minute;
-      heureNminute = heure + "h : " + minute + "m";
+      heureNminute = heure + " : " + minute;
       tempextGraph = JSON.parse(tempext);
       tempintGraph = JSON.parse(tempint);
       tabTemp.push(heureNminute);
