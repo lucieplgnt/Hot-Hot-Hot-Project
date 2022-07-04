@@ -1,3 +1,5 @@
+
+// systhème d'onglets - début
 const onglets = Array.from(document.querySelectorAll(".onglets"));
 const contenu = Array.from(document.querySelectorAll(".contenu"));
 
@@ -88,10 +90,10 @@ function drawChart() {
       console.log(latempExt + valTemp);
       console.log(latempInt + valTemp2);
       if (valTemp > 18  || valTemp2 > 18) {
-        console.log("c'est l'été ou quoi ?");
+        console.log("Il fait plus de 18°");
       }
       if (valTemp2 < 5 || valTemp < 5) {
-        console.log("wesh le glaçon !");
+        console.log("il fait moins de 5°");
       }
 
       let tmp = document.querySelector(".temperature");
@@ -301,7 +303,7 @@ function drawChart() {
         });
 
         if (valTemp2 < 10 || valTemp < 10) { /* 10 */
-          console.log("il fait froid aujourd'hui, moins de 12°");
+          console.log("il fait froid aujourd'hui, moins de 10°");
 
           if (valTemp < 10 && valTemp2 > 10) {
             text3.textContent = "il fait froid dehors";
